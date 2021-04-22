@@ -1,0 +1,53 @@
+<body>
+  <div class="izq"></div>
+  <div class="circuloverde">
+    <div class="circulorojo"></div>
+  </div>
+  <div class="dcha"></div>
+</body>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: #191210;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .circuloverde {
+    width: 140px;
+    height: 140px;
+    background: #eca03d;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .circulorojo {
+    width: 100px;
+    height: 100px;
+    background-color: #84271c;
+    border-radius: 50%;
+    border: 25px solid;
+  }
+  .izq {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 20px solid;
+    border-color: transparent transparent #eca03d #eca03d;
+
+    transform: rotate(-45deg) translate(18px, 10px);
+  }
+  .dcha {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 20px solid;
+    border-color: transparent transparent #eca03d #eca03d;
+    transform: rotate(135deg) translate(10px, 18px);
+  }
+</style>
