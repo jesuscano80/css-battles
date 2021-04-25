@@ -1,0 +1,68 @@
+<div class="contenedor">
+  <div class="izq"></div>
+  <div class="circuloverde">
+    <div class="amarilloborde">
+      <div class="pupila"></div>
+    </div>
+  </div>
+  <div class="dcha"></div>
+</div>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: #0b2429;
+  }
+  .contenedor {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .circuloverde {
+    background: #998235;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  .amarilloborde {
+    background: #f3ac3c;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    border: solid #0b2429 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pupila {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #0b2429;
+  }
+  .dcha {
+    height: 0;
+    width: 0;
+    border-left: solid 72px #998235;
+    border-bottom: solid 72px transparent;
+    border-top: solid 72px transparent;
+    transform: translate(-30px);
+  }
+  .izq {
+    height: 0;
+    width: 0;
+    border-right: solid 72px #998235;
+    border-bottom: solid 72px transparent;
+    border-top: solid 72px transparent;
+    transform: translate(30px);
+  }
+</style>
