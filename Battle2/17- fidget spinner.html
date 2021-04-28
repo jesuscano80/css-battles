@@ -1,0 +1,73 @@
+<div class="izq"></div>
+
+<div class="centro">
+  <div class="arriba"></div>
+  <div class="abajo"></div>
+  <div class="absolute"></div>
+</div>
+
+<div class="derecha"></div>
+
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .absolute {
+    display: absolute;
+    background: #e78481;
+    height: 50px;
+    width: 60px;
+    transform: translate(-10px, -165px);
+    z-index: -10;
+  }
+  body {
+    background: #09042a;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+  }
+  .izq {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background: #09042a;
+    border: 10px solid #e78481;
+    transform: translate(0px);
+  }
+  .centro {
+    width: 40px;
+    height: 40px;
+    background: #e78481;
+  }
+  .derecha {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background: #09042a;
+    border: 10px solid #e78481;
+    transform: translate(0px);
+  }
+  .arriba {
+    position: relative;
+    background: #f5bb9c;
+    border-radius: 50px;
+    width: 80px;
+    height: 80px;
+    border: 10px solid #09042a;
+    transform: translate(-20px, 33px);
+    z-index: 1000;
+  }
+  .abajo {
+    position: relative;
+    background: #f5bb9c;
+    border-radius: 50px;
+    width: 80px;
+    height: 80px;
+    border: 10px solid #09042a;
+    transform: translate(-20px, -153px);
+    z-index: 1000;
+  }
+</style>
